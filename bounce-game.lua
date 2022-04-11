@@ -7,9 +7,9 @@ local backwards = false;
 for i = 1, 100 do
   local field = "!          !";
   field = field:sub(1, pos-1) .. "O" .. field:sub(pos+1)
-  if string.sub(field, 11, 11) == "O" then
+  if pos == string.len(field) - 1 then
     backwards = true
-  elseif string.sub(field, 2, 2) == "O" then
+  elseif pos == 2 then
     backwards = false
   end
   print(field)

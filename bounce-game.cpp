@@ -11,9 +11,9 @@ int main() {
     string field = "!          !";
     
     field[pos]= 'O';
-    if(field[field.length()-2] == 'O'){
+    if(pos == field.length() - 2){
       backwards = true;
-    } else if(field[1] == 'O'){
+    } else if(pos == 1){
       backwards = false;
     }
     cout << field << "\n";

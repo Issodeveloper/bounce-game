@@ -15,9 +15,9 @@ class Program {
       StringBuilder sb = new StringBuilder(field);
       sb[pos] = 'O';
       field = sb.ToString();
-      if(field[field.Length-2] == 'O'){
+      if(pos == field.Length - 2){
         backwards = true;
-      } else if(field[1] == 'O'){
+      } else if(pos == 1){
         backwards = false;
       }
       Console.WriteLine(field);

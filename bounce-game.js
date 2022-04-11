@@ -4,9 +4,9 @@ let backwards = false;
 for(let i = 1; i <= 100; i++){
   let field = '!          !';
   field = field.substring(0, pos) + 'O' + field.substring(pos + 1);
-  if(field[field.length-2] == 'O'){
+  if(pos == field.length-2){
     backwards = true;
-  } else if(field[1] == 'O'){
+  } else if(pos == 1){
     backwards = false;
   }
   console.log(field)
