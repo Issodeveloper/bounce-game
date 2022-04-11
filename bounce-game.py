@@ -5,9 +5,9 @@ backwards = False
 for i in range(1, 100):
     field = '!          !'
     field = field[:pos] + 'O' + field[pos+1:]
-    if field[len(field)-2] == 'O':
+    if pos == len(field)-2:
         backwards = True
-    elif field[1] == 'O':
+    elif pos == 1:
         backwards = False
     print(field)
 
